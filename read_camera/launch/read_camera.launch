@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+	<rosparam command="load" file="$(find read_camera)/params/camera_params.yaml" />
+	<node pkg="read_camera" name="read_cam_node" type="read_cam" />
+</launch>
